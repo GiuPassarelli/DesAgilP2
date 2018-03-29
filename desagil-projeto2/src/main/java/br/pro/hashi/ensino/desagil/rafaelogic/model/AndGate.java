@@ -2,16 +2,16 @@ package br.pro.hashi.ensino.desagil.rafaelogic.model;
 
 public class AndGate extends Gate{
 
-	@Override
-	public boolean read() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	private NandGate nand = new NandGate();
 
 	@Override
 	public void connect(int pinIndex, Emitter emitter) {
-		// TODO Auto-generated method stub
-		
+		nand.connect(pinIndex, emitter);
 	}
-
+	
+	@Override
+	public boolean read() {
+		System.out.println(nand.read());
+		return !(nand.read());
+	}
 }
