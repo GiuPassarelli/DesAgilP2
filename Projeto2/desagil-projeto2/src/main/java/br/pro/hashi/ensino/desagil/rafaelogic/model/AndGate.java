@@ -1,11 +1,11 @@
 package br.pro.hashi.ensino.desagil.rafaelogic.model;
 
 public class AndGate extends Gate{
-
 	private NandGate nand;
 	private NotGate not;
 	
 	public AndGate() {
+		super("And", 2);
 		nand = new NandGate();
 		not = new NotGate();
 		}

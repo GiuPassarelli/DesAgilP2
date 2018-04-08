@@ -1,12 +1,13 @@
 package br.pro.hashi.ensino.desagil.rafaelogic.model;
 
-public class XorGate extends Gate {
+public class XorGate extends Gate {	
 	private NandGate nand1;
 	private NandGate nand2;
 	private NandGate nand3;
 	private NandGate nand4;
 	
 	public XorGate(){
+		super("Xor", 2);
 		nand1 = new NandGate();
 		nand2 = new NandGate();
 		nand3 = new NandGate();
