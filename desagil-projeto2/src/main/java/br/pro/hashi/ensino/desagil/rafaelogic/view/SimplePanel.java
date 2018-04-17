@@ -2,7 +2,6 @@ package br.pro.hashi.ensino.desagil.rafaelogic.view;
 
 import java.awt.Component;
 import java.awt.Dimension;
-
 import javax.swing.JPanel;
 
 public class SimplePanel extends JPanel {
